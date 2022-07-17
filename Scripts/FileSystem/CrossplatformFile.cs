@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 namespace UnityAutoSettings.FileSystem{
-    public static class СrossplatformFile
+    public static class CrossplatformFile
     {
         public static void Write(string url, string data) {
             switch (Application.platform) {
