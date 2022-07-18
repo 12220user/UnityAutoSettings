@@ -14,7 +14,22 @@ namespace UnityAutoSettings.FileSystem{
                     WriteFileWindows(Path.GetFullPath(url), data);
                     break;
                 case (RuntimePlatform.Android):
+                    WriteFileAndroid(url, data);
                     break;
+                default:
+                    throw new System.Exception("This platform todata nonsupported, pls wait when add this OS!!");
+            }
+        }
+
+        public static string Read(string url) {
+            switch (Application.platform)
+            {
+                case RuntimePlatform.WindowsEditor:
+                    return WindowsRead(url);
+                case (RuntimePlatform.WindowsPlayer):
+                    return WindowsRead(url);
+                case (RuntimePlatform.Android):
+                    return AndroidRead(url);
                 default:
                     throw new System.Exception("This platform todata nonsupported, pls wait when add this OS!!");
             }
@@ -37,9 +52,18 @@ namespace UnityAutoSettings.FileSystem{
             File.WriteAllText(url, data);
         }
 
+        private static string WindowsRead(string url)
+        {
+            return File.ReadAllText(url);
+        }
+
+        private static string AndroidRead(string url) {
+            WWW www = new WWW(url);
+            while (!www.isDone) { }
+            return www.text;
+        }
 
 
-        [System.Obsolete]
         private static void WriteFileAndroid(string url, string data) {
             WWW w = new WWW(url , System.Text.Encoding.ASCII.GetBytes(data));
             while (!w.isDone) { }

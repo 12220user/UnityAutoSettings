@@ -6,6 +6,7 @@ namespace UnityAutoSettings.Rule.Types.Basic
             type = new string[] { 
                 "text",
                 "header",
+                "text-value-submit",
                 "undefiend"
             };
         }

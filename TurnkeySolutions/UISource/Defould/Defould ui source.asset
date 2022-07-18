@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c0056c44586954ea041e56e20fd989, type: 3}
+  m_Name: Defould ui source
+  m_EditorClassIdentifier: 
+  Name: defould
+  items:
+  - type: header
+    prefub: {fileID: 1063244540970577312, guid: c7a401df5721be441a1b82549ca7cdb2, type: 3}
+  - type: text
+    prefub: {fileID: 506796349253077712, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+  - type: text-value-submit
+    prefub: {fileID: 7666988121067552065, guid: 25f1bd2aeda295d40a4961c648599f88, type: 3}

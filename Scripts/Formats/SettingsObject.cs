@@ -13,7 +13,7 @@ namespace UnityAutoSettings
         public string name { get; private set; }
         public string context { get; private set; }
         public string version { get; private set; }
-        private Dictionary<string, SettingsItem> items;
+        private Dictionary<string, SettingsItem> items = new Dictionary<string, SettingsItem>();
         private Settings self;
         private List<TypeRule> typeRules;
 
@@ -28,6 +28,7 @@ namespace UnityAutoSettings
             context = source.context;
             version = source.version;
             foreach (SettingsItem item in source.items) {
+                //UnityEngine.Debug.Log(item == null);
                 items.Add(item.name, item);
             }
             typeRules = new List<TypeRule>();
@@ -36,7 +37,13 @@ namespace UnityAutoSettings
             InitSettingsEvent?.Invoke(this);
         }
 
-        public SettingsItem GetItem(int order)
+        public static SettingsObject init( string path)
+        {
+            var st = UnityEngine.JsonUtility.FromJson<Settings>( CrossplatformFile.Read(path));
+            return new SettingsObject(st, path);
+        }
+
+            public SettingsItem GetItem(int order)
         {
             return items
                 .Where(x => x.Value.order == order)
@@ -111,7 +118,12 @@ namespace UnityAutoSettings
         }
 
         private bool CheckÑomplianceType(string type , string value) {
-            var rules = typeRules.Where(x => x.type.Contains(type)).ToArray();
+            var rules = typeRules
+                .Where(x => 
+                    x.type
+                        .Select(x=>x.ToLower())
+                .Contains(type.ToLower()))
+                .ToArray();
             if (rules.Length == 0) return false;
             else {
                 foreach (var rule in rules) {
@@ -120,6 +132,18 @@ namespace UnityAutoSettings
                 }
                 return true;
             }
+        }
+
+        public int[] GetAllOrders(bool sorted = true) {
+            return (sorted? items.Select(x => x.Value.order).OrderBy(x=>x) : items.Select(x => x.Value.order)).ToArray();
+        }
+
+        public int[] GetAllOrdersVisualised(bool sorted = true)
+        {
+            return (sorted ? 
+                items.Where(x=>x.Value.visualised).Select(x => x.Value.order).OrderBy(x => x) : 
+                items.Where(x => x.Value.visualised).Select(x => x.Value.order))
+                .ToArray();
         }
     }
 }
