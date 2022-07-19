@@ -8,6 +8,7 @@ namespace UnityAutoSettings
         private void AddSettingsItemTypeBasic() {
             AddSettingsItemType(new NumberTypeRule());
             AddSettingsItemType(new BasicNoInteractabeTypeRule());
+            AddSettingsItemType(new TextTypeRule());
         }
 
         public void AddSettingsItemType(TypeRule rule) {

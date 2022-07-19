@@ -15,8 +15,12 @@ MonoBehaviour:
   Name: defould
   items:
   - type: header
-    prefub: {fileID: 1063244540970577312, guid: c7a401df5721be441a1b82549ca7cdb2, type: 3}
+    prefub: {fileID: 5666483077401576066, guid: c5bd21f0ad634bb44be62c9f59320bf3, type: 3}
   - type: text
-    prefub: {fileID: 506796349253077712, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+    prefub: {fileID: 312869360923976421, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
   - type: text-value-submit
     prefub: {fileID: 7666988121067552065, guid: 25f1bd2aeda295d40a4961c648599f88, type: 3}
+  - type: sub-header
+    prefub: {fileID: 6846661263815664597, guid: 378fe9e5cf1e39742b66a5fd8eb97df5, type: 3}
+  - type: linq
+    prefub: {fileID: 3851020364647902482, guid: 640db2e5771d30b40a305ff07f2c0908, type: 3}

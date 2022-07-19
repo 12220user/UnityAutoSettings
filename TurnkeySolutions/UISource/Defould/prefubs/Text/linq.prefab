@@ -1,15 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &705349761210607472
+--- !u!1001 &3541548499161583607
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 312869360923976421, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Name
+      value: linq Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 506796349253077712, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
       propertyPath: m_Name
-      value: HeaderText
+      value: linq
       objectReference: {fileID: 0}
     - target: {fileID: 2903918492879869705, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
       propertyPath: m_Pivot.x
@@ -21,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2903918492879869705, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2903918492879869705, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -95,9 +99,95 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2977481850564658953, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977481850564658953, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.60489
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977481850564658953, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.22921856
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467376191857682087, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: field
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836697248358645612, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: linq
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 907.82477
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363856333263114998, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
-      propertyPath: m_FontData.m_FontStyle
+      propertyPath: m_Text
+      value: click here
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6347811
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.0047169924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029897676774430487, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130449308855058020, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+      propertyPath: linq
+      value: 
+      objectReference: {fileID: 4847457661626915593}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+--- !u!1 &3851020364647902482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 312869360923976421, guid: dc1a44ab06cc5df4bb57dcc7291dcf1a, type: 3}
+  m_PrefabInstance: {fileID: 3541548499161583607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4847457661626915593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851020364647902482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f454a664b2683e4980ea64aba3539b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: 
